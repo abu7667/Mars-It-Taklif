@@ -1,0 +1,109 @@
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+.text-8xl {
+    font-size: 6rem;
+}
+
+.text-5xl {
+    font-size: 3rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 95%;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-8xl {
+        font-size: 5rem;
+    }
+
+    .text-5xl {
+        font-size: 2.5rem;
+    }
+
+    .text-3xl {
+        font-size: 1.875rem;
+    }
+
+    .flex-col {
+        gap: 1.5rem;
+    }
+
+    .p-8 {
+        padding: 1.5rem;
+    }
+
+    .p-9 {
+        padding: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .text-8xl {
+        font-size: 4rem;
+    }
+
+    .text-5xl {
+        font-size: 2rem;
+    }
+
+    .text-3xl {
+        font-size: 1.5rem;
+    }
+
+    .text-2xl {
+        font-size: 1.25rem;
+    }
+
+    .text-lg {
+        font-size: 1rem;
+    }
+
+    .p-8 {
+        padding: 1rem;
+    }
+
+    .p-9 {
+        padding: 1rem;
+    }
+
+    .flex-col {
+        gap: 1rem;
+    }
+
+    footer .flex {
+        gap: 1.5rem;
+    }
+
+    footer .text-4xl {
+        font-size: 2rem;
+    }
+}

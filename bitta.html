@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="uz" data-theme="synthwave">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars IT - Ro'yxatdan O'tish</title>
+    <link rel="shortcut icon"href="https://avatars.mds.yandex.net/get-altay/14816713/2a000001959d878598dca318af8cb907174f/L_height"type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body
+    class="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-pink-900 flex items-center justify-center p-4">
+
+    <div
+        class="bg-base-200/90 backdrop-blur-md rounded-3xl shadow-2xl shadow-cyan-500/50 p-8 border-2 border-primary/30 max-w-md w-full">
+
+        <div class="text-center mb-8">
+            <div class="text-6xl mb-4">🎉</div>
+            <h1 class="text-3xl font-bold text-orange-400 mb-2">Mars IT Tadbiriga Xush Kelibsiz!</h1>
+            <p class="text-gray-300">Ma'lumotlaringizni kiriting</p>
+        </div>
+
+
+
+        <form id="rsvpForm" class="space-y-5">
+
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text text-lg font-semibold">👤 Ismingiz</span>
+                </label>
+                <input type="text" id="firstName" placeholder="Masalan: Alibek"
+                    class="input input-bordered input-primary w-full text-lg" required />
+            </div>
+
+            <div class="form-control">
+                <label class="label">
+                    <span class="label-text text-lg font-semibold">👥 Familiyangiz</span>
+                </label>
+                <input type="text" id="lastName" placeholder="Masalan: Karimov"
+                    class="input input-bordered input-primary w-full text-lg" required />
+            </div>
+
+            <div class="">
+                <label class="label">
+                    <span class="label-text text-lg font-semibold">🔍 Davlat raqamingiz</span>
+                </label>
+                <select id="countryCode" class="input input-primary input-bordered w-full text-lg" required>
+                    <option value="+998" selected>🇺🇿 +998</option>
+                    <option value="+7">🇷🇺 +7</option>
+                    <option value="+1">us +1</option>
+                    <option value="+90">turkey +90</option>
+                    <option value="+81">japan +81</option>
+                    <option value="+850">north korea +850</option>
+                </select>
+
+                <div class="mt-6">
+                    <label class="label">
+                        <span class="label-text text-lg font-semibold">📱 Telefon raqamingiz</span>
+                    </label>
+                    <input type="number" id="phone" placeholder="99 123 45 67" required
+                        class="input-primary input w-full text-lg ">
+                </div>
+            </div>
+
+            <div id="error" class="text-error text-center font-semibold"></div>
+
+            <button type="submit" id="submitBtn"
+                class="btn btn-primary w-full text-xl font-bold hover:scale-105 transition-all">
+                Tasdiqlash 🎊
+            </button>
+        </form>
+
+        <div class="text-center mt-6">
+            <button class="text text-primary cursor-pointer underline">🏠 Orqaga qaytish</button>
+        </div>
+    </div>
+
+    <script src="./bitta.js"></script>
+
+</body>
+
+</html>
